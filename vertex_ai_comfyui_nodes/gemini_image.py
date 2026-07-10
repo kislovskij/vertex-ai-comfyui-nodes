@@ -60,7 +60,11 @@ class GeminiImageNode:
                     "multiline": True,
                     "default": "A beautiful landscape painting."
                 }),
-                "model_name": (["gemini-2.5-flash-image-preview"],),
+                "model_name": ([
+                    "gemini-3-pro-image",
+                    "gemini-3.1-flash-image",
+                    "gemini-3.1-flash-lite-image"
+                ],),
                 "seed": ("INT", {
                     "default": random.randint(0, 2147483647),
                     "min": 0,
