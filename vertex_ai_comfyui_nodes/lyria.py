@@ -128,7 +128,7 @@ class LyriaNode:
         instances = [{"prompt": prompt}]
         parameters = {"sampleCount": sample_count, "seed": seed}
 
-        model_endpoint = f"projects/{project_id}/locations/{location}/publishers/google/models/lyria-002"
+        model_endpoint = f"projects/{project_id}/locations/{location}/publishers/google/models/lyria-3-pro-preview"
 
         # Call the prediction endpoint asynchronously.
         response = await asyncio.to_thread(
