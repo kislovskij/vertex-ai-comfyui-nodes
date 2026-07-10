@@ -51,7 +51,11 @@ class Veo3Node:
                     "multiline": False,
                     "default": os.environ.get("GOOGLE_CLOUD_REGION", "us-central1")
                 }),
-                "model": (["veo-3.0-fast-generate-preview", "veo-3.0-generate-preview"],),
+                "model": ([
+                    "veo-3.1-generate-001",
+                    "veo-3.1-fast-generate-001",
+                    "veo-3.1-lite-generate-001"
+                ],),
                 "prompt": ("STRING", {
                     "multiline": True,
                     "default": "A cinematic shot of a panda eating bamboo."
